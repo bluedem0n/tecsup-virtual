@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: HelveticaLight;
+  src: url("fuentes/HelveticaNeueLight.ttf");
+}
+
+@font-face {
+  font-family: HelveticaBold;
+  src: url("fuentes/HelveticaNeue-BoldCond.otf");
+}
+
 header {
   width: 100%;
   text-align: right;
@@ -36,7 +46,7 @@ header nav li a {
   color: white;
   font-size: 14px;
   font-weight: 600;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
 }
 
 main {
@@ -98,7 +108,7 @@ main .container .derecho .inside .form .titulo p {
   font-size: 20px;
   text-align: center;
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-weight: 900;
 }
 
@@ -149,7 +159,7 @@ main .container .derecho .ingresa {
 
 main .container .derecho .ingresa p {
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   width: 100%;
   margin-top: 1em;
   font-size: 18px;
@@ -159,7 +169,7 @@ main .container .derecho .ingresa p {
 main .container .derecho .ingresa a {
   color: #89991d;
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
 }
 
 .mes {
@@ -201,6 +211,7 @@ main .container .derecho .ingresa a {
 }
 
 .mes .contenedor .padre .caja .izq {
+  border-radius: 0.4em;
   display: flex;
   flex-wrap: wrap;
   padding: 1em;
@@ -210,7 +221,7 @@ main .container .derecho .ingresa a {
 
 .mes .contenedor .padre .caja .izq .title {
   color: #01aef0;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-weight: 600;
   font-size: 0.87em;
   margin-top: .3em;
@@ -218,14 +229,14 @@ main .container .derecho .ingresa a {
 
 .mes .contenedor .padre .caja .izq .cont {
   font-weight: bold;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-size: 0.9em;
   margin-top: -1.5em;
   text-align: left;
 }
 
 .mes .contenedor .padre .caja .izq .gris {
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-size: 0.81em;
   color: grey;
   margin-top: 6.1em;
@@ -263,23 +274,37 @@ main .container .derecho .ingresa a {
 }
 
 .mes .contenedor .noti .izq .boton {
-  color: white;
+  color: black;
   float: right;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   text-align: right;
   cursor: pointer;
   display: none;
+  font-size: 2em;
+}
+
+.mes .contenedor .noti .izq .pop {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  background: white;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .mes .contenedor .noti .izq video {
   width: 100%;
-  display: none;
 }
 
 .mes .contenedor .noti .izq p {
   font-size: 2.5em;
   color: white;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
 }
 
 .mes .contenedor .noti .izq button {
@@ -310,11 +335,11 @@ main .container .derecho .ingresa a {
 .mes .contenedor .noti .der h2 {
   color: #01aef0;
   font-size: 1.5em;
-  font-family: "Open Sans";
+  font-family: "HelveticaLight";
 }
 
 .mes .contenedor .noti .der p {
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
 }
 
 .pilares {
@@ -332,7 +357,7 @@ main .container .derecho .ingresa a {
   width: 100%;
   text-align: center;
   font-size: 42px;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-weight: bold;
   padding: 1.5em;
   letter-spacing: 5px;
@@ -431,7 +456,7 @@ main .container .derecho .ingresa a {
 .redes .container .texto p {
   width: 100%;
   text-align: right;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-size: 20px;
 }
 
@@ -456,7 +481,7 @@ main .container .derecho .ingresa a {
 
 .redes .container .cajas-con .cajas p {
   width: 100%;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-size: 14px;
 }
 
@@ -479,7 +504,7 @@ main .container .derecho .ingresa a {
 
 .infor .contenedor .titulo h2 {
   color: #01afee;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   font-size: 35px;
   word-spacing: 5px;
   letter-spacing: 4px;
@@ -498,7 +523,7 @@ main .container .derecho .ingresa a {
 
 .infor .contenedor .caja-padre .cajas p {
   color: #01afee;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   text-align: center;
 }
 
@@ -522,14 +547,14 @@ main .container .derecho .ingresa a {
 .foot .inside .pie .iz {
   width: 100%;
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   text-align: center;
 }
 
 .foot .inside .pie .der {
   width: 100%;
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: 'HelveticaLight';
   text-align: center;
 }
 
@@ -561,9 +586,15 @@ main .container .derecho .ingresa a {
   }
   .mes .contenedor .noti {
     margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .mes .contenedor .noti .izq {
-    padding: 1em;
+    width: 100%;
+    max-width: 2000px;
+  }
+  .mes .contenedor .noti .izq .pop {
+    position: relative;
   }
   .mes .contenedor .noti .izq p {
     font-size: 1.5em;

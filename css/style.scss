@@ -2,7 +2,14 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+@font-face{
+    font-family: HelveticaLight;
+    src: url('fuentes/HelveticaNeueLight.ttf');
+}
+@font-face{
+    font-family: HelveticaBold;
+    src: url('fuentes/HelveticaNeue-BoldCond.otf');
+}
 $color: #01aef0;
 header {
     width: 100%;
@@ -31,7 +38,7 @@ header {
                 color: white;
                 font-size: 14px;
                 font-weight: 600;
-                font-family: 'Open Sans';
+                font-family: 'HelveticaLight';
             }
         }
     }
@@ -83,7 +90,7 @@ main {
                             font-size: 20px;
                             text-align: center;
                             color: #fff;
-                            font-family: 'Open Sans';
+                            font-family: 'HelveticaLight';
                             font-weight: 900;
                         }
                     }
@@ -132,7 +139,7 @@ main {
                 align-items: center;
                 p {
                     color: #fff;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                     width: 100%;
                     margin-top: 1em;
                     font-size: 18px;
@@ -141,7 +148,7 @@ main {
                 a {
                     color: #89991d;
                     font-size: 16px;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                 }
             }
         }
@@ -182,7 +189,7 @@ main {
                 border: 1px solid $color;
                 
                 .izq {
-                    
+                    border-radius: 0.4em;
                     display: flex;
                     flex-wrap: wrap;
                     padding: 1em;
@@ -190,20 +197,20 @@ main {
                     background: white;
                     .title {
                         color: $color;
-                        font-family: 'Open Sans';
+                        font-family: 'HelveticaLight';
                         font-weight: 600;
                         font-size: 0.87em;
                         margin-top: .3em;
                     }
                     .cont {
                         font-weight: bold;
-                        font-family: 'Open Sans';
+                        font-family: 'HelveticaLight';
                         font-size: 0.9em;
                         margin-top: -1.5em;
                         text-align: left;
                     }
                     .gris {
-                        font-family: 'Open Sans';
+                        font-family: 'HelveticaLight';
                         font-size: 0.81em;
                         color: grey;
                         margin-top: 6.1em;
@@ -231,12 +238,27 @@ main {
             transition-duration: 1s;
             .izq {
                 .boton{
-                    color: white;
+                    color: black;
                     float: right;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                     text-align: right;
                     cursor: pointer;
                     display: none;
+                    font-size: 2em;
+                }
+                .pop{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    max-width: 1200px;
+                    padding: 1em;
+                    -webkit-box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.75);
+                    box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.75);
+                    background: white;
+                    border-radius: 5px;
+                    margin: auto;
+                    
                 }
                 padding: 5em 0em 3.5em 0em;
                 width: 50%;
@@ -246,12 +268,11 @@ main {
                 transition: 1s linear;
                 video{
                     width: 100%;
-                    display: none;
                 }
                 p {
                     font-size: 2.5em;
                     color: white;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                 }
                 button {
                     margin-top: 1.4em;
@@ -278,10 +299,10 @@ main {
                 h2 {
                     color: $color;
                     font-size: 1.5em;
-                    font-family: "Open Sans";
+                    font-family: "HelveticaLight";
                 }
                 p {
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                 }
             }
         }
@@ -299,7 +320,7 @@ main {
             width: 100%;
             text-align: center;
             font-size: 42px;
-            font-family: 'Open Sans';
+            font-family: 'HelveticaLight';
             font-weight: bold;
             padding: 1.5em;            
             letter-spacing: 5px;
@@ -389,7 +410,7 @@ main {
             p {
                 width: 100%;
                 text-align: right;
-                font-family: 'Open Sans';
+                font-family: 'HelveticaLight';
                 font-size: 20px;
             }
         }
@@ -409,7 +430,7 @@ main {
                 }
                 p {
                     width: 100%;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                     font-size: 14px;
                 }
             }
@@ -430,7 +451,7 @@ main {
             text-align: center;
             h2{
                 color: #01afee;
-                font-family: 'Open Sans';
+                font-family: 'HelveticaLight';
                 font-size: 35px;
                 word-spacing: 5px;
                 letter-spacing: 4px;
@@ -445,7 +466,7 @@ main {
                 padding: 0.5em 0.95em 0.5em 0.95em;
                 p{                    
                     color: #01afee;
-                    font-family: 'Open Sans';
+                    font-family: 'HelveticaLight';
                     text-align: center;
                 }
             }
@@ -467,13 +488,13 @@ main {
             .iz{
                 width: 100%;
                 color: #fff;
-                font-family: 'Open Sans';
+                font-family: 'HelveticaLight';
                 text-align: center;
             }
             .der{
                 width: 100%;
                 color: #fff;
-                font-family: 'Open Sans';
+                font-family: 'HelveticaLight';
                 text-align: center;
             }
         }
@@ -512,8 +533,15 @@ main {
         .contenedor {
             .noti {
                 margin: auto;
+                flex-wrap: wrap;
+                width: 100%;
                 .izq {
-                    padding: 1em;
+                    width: 100%;
+                    max-width: 2000px;
+                    .pop{
+                        position: relative;
+                    }
+                
                     p {
                         font-size: 1.5em;
                     }
