@@ -15,15 +15,32 @@
 
 header {
   width: 100%;
-  text-align: right;
-  float: right;
-  background-color: #00adef;
 }
 
 header nav {
+  background-color: #00adef;
+  width: 100%;
   display: flex;
   float: right;
-  padding: 1.1em;
+  padding: 0.2em;
+  align-items: center;
+  justify-items: center;
+}
+
+header nav .menu {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+header nav .logo {
+  width: 30%;
+  margin-left: 1em;
+}
+
+header nav .logo img {
+  width: 100%;
+  max-width: 200px;
 }
 
 header nav .hover {
@@ -45,6 +62,7 @@ header nav li a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+  letter-spacing: 3px;
   font-weight: 600;
   font-family: 'HelveticaLight';
 }
@@ -109,6 +127,7 @@ main .container .derecho .inside .form .titulo p {
   text-align: center;
   color: #fff;
   font-family: 'HelveticaLight';
+  letter-spacing: 1.5px;
   font-weight: 900;
 }
 
@@ -163,6 +182,7 @@ main .container .derecho .ingresa p {
   width: 100%;
   margin-top: 1em;
   font-size: 18px;
+  text-shadow: 3px 3px 3px #000;
   margin-bottom: 0.2em;
 }
 
@@ -232,6 +252,7 @@ main .container .derecho .ingresa a {
   font-family: 'HelveticaLight';
   font-size: 0.9em;
   margin-top: -1.5em;
+  letter-spacing: 1.3px;
   text-align: left;
 }
 
@@ -239,7 +260,7 @@ main .container .derecho .ingresa a {
   font-family: 'HelveticaLight';
   font-size: 0.81em;
   color: grey;
-  margin-top: 6.1em;
+  margin-top: 6.7em;
   position: absolute;
 }
 
@@ -259,7 +280,8 @@ main .container .derecho .ingresa a {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
   margin-left: -0.8em;
   transition-duration: 1s;
 }
@@ -267,10 +289,14 @@ main .container .derecho .ingresa a {
 .mes .contenedor .noti .izq {
   padding: 5em 0em 3.5em 0em;
   width: 50%;
-  background: #0c297a;
-  max-width: 30em;
+  max-width: 50em;
+  max-height: 40em;
   border-radius: 5px;
   transition: 1s linear;
+  border: 1px solid #01aef0;
+  background-image: url("../img/f.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .mes .contenedor .noti .izq .boton {
@@ -287,14 +313,16 @@ main .container .derecho .ingresa a {
   display: none;
   position: absolute;
   width: 100%;
-  max-width: 1200px;
+  max-width: 720px;
   padding: 1em;
   -webkit-box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.75);
   background: white;
   border-radius: 5px;
-  margin: auto;
+  margin-left: 16em;
+  z-index: 8;
+  opacity: 1;
 }
 
 .mes .contenedor .noti .izq video {
@@ -308,11 +336,11 @@ main .container .derecho .ingresa a {
 }
 
 .mes .contenedor .noti .izq button {
-  margin-top: 1.4em;
+  margin-top: 25.7em;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #01aef0;
   padding: 1em;
-  color: white;
+  color: #01aef0;
   transition: 1s linear;
   cursor: pointer;
 }
@@ -334,17 +362,21 @@ main .container .derecho .ingresa a {
 
 .mes .contenedor .noti .der h2 {
   color: #01aef0;
-  font-size: 1.5em;
+  font-size: 3.125em;
+  letter-spacing: 4px;
   font-family: "HelveticaLight";
 }
 
 .mes .contenedor .noti .der p {
+  font-size: 1.25em;
+  letter-spacing: 1.5px;
   font-family: 'HelveticaLight';
 }
 
 .pilares {
   width: 100%;
-  background-color: #00adef;
+  background-image: url("../img/temporal.jpg");
+  background-size: cover;
 }
 
 .pilares .container {
@@ -356,7 +388,8 @@ main .container .derecho .ingresa a {
 .pilares .container h2 {
   width: 100%;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625em;
+  word-break: break-all;
   font-family: 'HelveticaLight';
   font-weight: bold;
   padding: 1.5em;
@@ -371,20 +404,30 @@ main .container .derecho .ingresa a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .pilares .container .conte-cajas .caja {
-  padding-top: 10em;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+  padding: 0.5em 0.95em 0.5em 0.95em;
+  text-align: center;
   color: #fff;
 }
 
-.pilares .container .conte-cajas .caja p {
-  font-size: 20px;
-  font-family: 'Lato';
-  text-align: center;
+.pilares .container .conte-cajas .caja img {
+  width: 100%;
+  max-width: 120px;
+  max-height: 180px;
+  height: 100%;
   padding-bottom: 30px;
+}
+
+.pilares .container .conte-cajas .caja p {
+  width: 100%;
+  font-size: 20px;
+  font-family: 'HelveticaLight';
+  text-align: center;
   font-weight: bold;
 }
 
@@ -412,6 +455,7 @@ main .container .derecho .ingresa a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 3.5em;
 }
 
 .final .padre .caja2 {
@@ -419,15 +463,98 @@ main .container .derecho .ingresa a {
   height: 8em;
   width: 100%;
   max-width: 300px;
+  margin-top: 20px;
   background: white;
-  border: 1px solid #01aef0;
+  font-family: 'HelveticaLight';
+}
+
+.final .padre .caja2 button {
+  background: transparent;
+  border-color: transparent;
+  float: right;
+  position: absolute;
+  margin-top: -1.3em;
+  margin-left: 20em;
+  cursor: pointer;
+}
+
+.final .padre .caja2 p {
+  margin-left: 1em;
+  margin-top: .4em;
 }
 
 .final .padre .caja2 .hijo {
   height: 75%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background: #01aef0;
+  display: flex;
+  padding: 15px;
+}
+
+.final .padre .caja2 .hijo .icono {
+  width: 26%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.final .padre .caja2 .hijo .icono img {
+  width: 100%;
+  height: 100%;
+  padding: 10px 17px 10px 17px;
+}
+
+.final .padre .caja2 .hijo .txt {
+  width: 80%;
+  margin: auto;
+}
+
+.final .padre .caja2 .hijo .txt p {
+  width: 100%;
+  font-family: 'HelveticaLight';
+  font-size: 15px;
+  padding-left: 9px;
+  color: #fff;
+}
+
+.final .padre .caja2 .col-1 {
+  background-color: #1AE3FF;
+}
+
+.final .padre .caja2 .col-2 {
+  background-color: #FE0000;
+}
+
+.final .padre .caja2 .col-3 {
+  background-color: #FF5E16;
+}
+
+.final .padre .caja2 .col-4 {
+  background-color: #0055C9;
+}
+
+.final .padre .caja2 .col-5 {
+  background-color: #509FE4;
+}
+
+.final .padre .co-1 {
+  border: 1px solid #1AE3FF;
+}
+
+.final .padre .co-2 {
+  border: 1px solid #FE0000;
+}
+
+.final .padre .co-3 {
+  border: 1px solid #FF5E16;
+}
+
+.final .padre .co-4 {
+  border: 1px solid #0055C9;
+}
+
+.final .padre .co-5 {
+  border: 1px solid #509FE4;
 }
 
 .redes {
@@ -464,6 +591,7 @@ main .container .derecho .ingresa a {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 2em 2em 2em 5em;
 }
 
@@ -473,6 +601,7 @@ main .container .derecho .ingresa a {
   margin-right: 15px;
   border: 1px solid #fff;
   border-radius: 5px;
+  margin-top: 0.4em;
 }
 
 .redes .container .cajas-con .cajas:hover {
@@ -508,21 +637,31 @@ main .container .derecho .ingresa a {
   font-size: 35px;
   word-spacing: 5px;
   letter-spacing: 4px;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
 }
 
 .infor .contenedor .caja-padre {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .infor .contenedor .caja-padre .cajas {
   width: 25%;
   padding: 0.5em 0.95em 0.5em 0.95em;
+  text-align: center;
+}
+
+.infor .contenedor .caja-padre .cajas img {
+  width: 100%;
+  max-width: 120px;
+  height: 70%;
+  padding-bottom: 30px;
 }
 
 .infor .contenedor .caja-padre .cajas p {
   color: #01afee;
+  font-size: 1.1em;
   font-family: 'HelveticaLight';
   text-align: center;
 }
@@ -558,7 +697,29 @@ main .container .derecho .ingresa a {
   text-align: center;
 }
 
+.oscuro {
+  width: 100%;
+  height: 150vh;
+  z-index: 2;
+  background: black;
+  top: 0;
+  opacity: .5;
+  position: fixed;
+  display: none;
+}
+
 @media screen and (max-width: 860px) {
+  header nav .logo {
+    display: none;
+  }
+  header nav .menu {
+    justify-content: center;
+    width: 100%;
+  }
+  header nav .menu li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
   main .container {
     flex-wrap: wrap;
   }
@@ -592,15 +753,42 @@ main .container .derecho .ingresa a {
   .mes .contenedor .noti .izq {
     width: 100%;
     max-width: 2000px;
+    margin-top: 5em;
   }
   .mes .contenedor .noti .izq .pop {
     position: relative;
+    margin-left: 0;
   }
   .mes .contenedor .noti .izq p {
     font-size: 1.5em;
   }
+  .mes .contenedor .noti .der {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  .mes .contenedor .noti .der h2 {
+    font-size: 2.5em;
+  }
+  .mes .contenedor .noti .der p {
+    font-size: 1.5em;
+  }
   .final .padre .caja2 {
     margin-top: 20px;
+  }
+  .redes .container .texto p {
+    text-align: center;
+  }
+  .redes .container .cajas-con {
+    width: 100%;
+  }
+  .infor .contenedor .caja-padre .cajas {
+    width: 100%;
+    height: 100%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .infor .contenedor .caja-padre .cajas img {
+    padding: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
