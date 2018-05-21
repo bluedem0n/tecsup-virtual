@@ -33,6 +33,10 @@ header nav .menu {
   justify-content: flex-end;
 }
 
+header nav .menu .dropicon {
+  display: none;
+}
+
 header nav .logo {
   width: 30%;
   margin-left: 1em;
@@ -79,6 +83,10 @@ main .container {
   max-width: 1200px;
   margin: auto;
   display: flex;
+}
+
+main .container img {
+  display: none;
 }
 
 main .container .izq {
@@ -200,6 +208,10 @@ main .container .derecho .ingresa a {
   padding: 1em;
 }
 
+.mes .text {
+  margin-top: 2em;
+}
+
 .mes .text p {
   background: #a23892;
   padding: 0.8em;
@@ -278,7 +290,7 @@ main .container .derecho .ingresa a {
 
 .mes .contenedor .padre .caja .der img {
   width: 100%;
-  padding: 0.4em;
+  padding: 0.8em;
   max-width: 134px;
   max-height: 140px;
 }
@@ -293,7 +305,8 @@ main .container .derecho .ingresa a {
 }
 
 .mes .contenedor .noti .izq {
-  padding: 5em 0em 3.5em 0em;
+  padding: 10em 0em 10em 0em;
+  margin-left: 1em;
   width: 50%;
   max-width: 50em;
   max-height: 40em;
@@ -316,19 +329,19 @@ main .container .derecho .ingresa a {
 }
 
 .mes .contenedor .noti .izq button {
-  margin-top: 25.7em;
-  background: transparent;
+  margin-top: auto;
+  background: #01aef0;
   border: 1px solid #01aef0;
   padding: 1em;
-  color: #01aef0;
+  color: #fff;
   transition: 1s linear;
   cursor: pointer;
 }
 
 .mes .contenedor .noti .izq button:hover {
   background: white;
-  color: black;
-  border: 1px solid black;
+  color: #01aef0;
+  border: 1px solid #01aef0;
 }
 
 .mes .contenedor .noti .der {
@@ -369,7 +382,6 @@ main .container .derecho .ingresa a {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
-  word-break: break-all;
   font-family: 'HelveticaLight';
   font-weight: bold;
   padding: 1.5em;
@@ -389,17 +401,16 @@ main .container .derecho .ingresa a {
 
 .pilares .container .conte-cajas .caja {
   width: 100%;
-  max-width: 200px;
-  padding: 0.5em 1em 0.5em 1em;
+  max-width: 300px;
+  max-height: 300px;
   text-align: center;
-  margin-right: 4.6em;
   color: #fff;
 }
 
 .pilares .container .conte-cajas .caja img {
   width: 100%;
   max-width: 120px;
-  max-height: 180px;
+  max-height: 120px;
   height: 100%;
   padding-bottom: 30px;
 }
@@ -478,6 +489,13 @@ main .container .derecho .ingresa a {
   margin-top: 20px;
   background: white;
   font-family: 'HelveticaLight';
+  justify-content: space-between;
+}
+
+.final .padre .caja2:hover {
+  -webkit-box-shadow: 3px 6px 21px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 6px 21px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 6px 21px -1px rgba(0, 0, 0, 0.75);
 }
 
 .final .padre .caja2 button {
@@ -486,7 +504,7 @@ main .container .derecho .ingresa a {
   float: right;
   position: absolute;
   margin-top: -1.3em;
-  margin-left: 20em;
+  margin-left: 15em;
   cursor: pointer;
 }
 
@@ -726,22 +744,60 @@ main .container .derecho .ingresa a {
   }
   header nav .menu {
     justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
   header nav .menu li {
     padding-left: 0.5em;
     padding-right: 0.5em;
+    display: none;
+  }
+  header nav .menu li a {
+    font-size: 1.35em;
+  }
+  header nav .menu .dropicon {
+    display: block;
+    float: right;
+  }
+  header nav .menu .dropicon img {
+    position: absolute;
+    margin-right: 1em;
+    min-width: 116.1px;
+    max-width: 116px;
+    right: 0;
+  }
+  header nav #desplegar {
+    padding: 1em;
+  }
+  header nav .menu.responsive {
+    position: relative;
+  }
+  header nav .menu.responsive .dropicon {
+    display: flex;
+    align-content: center;
+  }
+  header nav .menu.responsive li {
+    display: inline;
+  }
+  header nav .menu.responsive li a {
+    font-size: 1em;
+    padding: 2%;
+    display: block;
+    text-align: left;
   }
   main .container {
     flex-wrap: wrap;
+    background: url("../img/deep.jpg");
   }
-  main .container .izq {
+  main .container s
+.izq {
     display: none;
     width: 100%;
     padding: 0.5em;
     text-align: center;
   }
-  main .container .izq img {
+  main .container s
+.izq img {
     width: 100%;
     max-width: 600px;
   }
@@ -757,9 +813,19 @@ main .container .derecho .ingresa a {
   main .container .ingresa {
     margin: auto;
   }
+  .pilares .container .conte-cajas .caja {
+    margin-right: 0;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   .mes .contenedor .noti {
     margin: auto;
     flex-wrap: wrap;
+    width: 100%;
+  }
+  .mes .contenedor .noti .der {
     width: 100%;
   }
   .mes .contenedor .noti .izq {
@@ -784,14 +850,29 @@ main .container .derecho .ingresa a {
   .mes .contenedor .noti .der p {
     font-size: 1.5em;
   }
+  .final .padre {
+    justify-content: space-between;
+  }
   .final .padre .caja2 {
     margin-top: 20px;
+    margin-left: 10px;
+  }
+  .redes .container {
+    justify-content: center;
+  }
+  .redes .container .texto {
+    padding: 1em;
+    width: 100%;
   }
   .redes .container .texto p {
+    width: 100%;
     text-align: center;
   }
   .redes .container .cajas-con {
     width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
   }
   .infor .contenedor .caja-padre .cajas {
     width: 100%;
@@ -801,6 +882,26 @@ main .container .derecho .ingresa a {
   }
   .infor .contenedor .caja-padre .cajas img {
     padding: 1em;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  main {
+    background: url("../img/deep.jpg");
+  }
+  main .container img#resp {
+    width: 100%;
+    display: block;
+    max-height: 13em;
+  }
+  .infor .contenedor {
+    padding: 1.3em;
+  }
+  .infor .contenedor .titulo h2 {
+    font-size: 1.4em;
+  }
+  .final .padre {
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
