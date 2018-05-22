@@ -131,7 +131,8 @@ main .container .derecho .inside .form .titulo {
 	padding: 0.8em;
 	margin-bottom: 1em;
 	border-radius: 0px;
-	background: #a23892;
+	background: transparent;
+	border: 2px solid #FFFFFF;
 }
 
 main .container .derecho .inside .form .titulo p {
@@ -209,7 +210,7 @@ main .container .derecho .ingresa a {
 .mes {
 	width: 100%;
 	text-align: center;
-	background-image: url("../img/crossword.png");
+	background-image: url("../img/bg-tecsup.png");
 	padding: 1em;
 }
 
@@ -461,6 +462,7 @@ main .container .derecho .ingresa a {
 	max-width: 1200px;
 	margin: auto;
 	padding: 1em;
+	background-image: url("../img/bg-tecsup.png");
 }
 
 .final .caja h2 {
@@ -655,6 +657,7 @@ main .container .derecho .ingresa a {
 	max-width: 1200px;
 	margin: auto;
 	padding: 3em 5em 3em 5em;
+    background-image: url("../img/bg-tecsup.png");
 }
 
 .infor .contenedor .titulo {
