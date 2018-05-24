@@ -14,6 +14,10 @@
 	src: url("fuentes/HelveticaNeue-BoldCond.otf");
 }
 
+html{
+    background-image: url("../img/bg-tecsup.png");
+    background-attachment: fixed;
+}
 header {
 	width: 100%;
 }
@@ -77,6 +81,7 @@ main {
 	background-image: url("../img/BG.jpg");
 	background-size: cover;
 	background-position: center center;
+    background-attachment: fixed;
 }
 
 main .container {
@@ -101,7 +106,7 @@ main .container .izq img {
 
 main .container .derecho {
 	width: 50%;
-	padding: 3em;
+	padding: 5em;
 	margin-left: 8em;
 }
 
@@ -177,13 +182,12 @@ main .container .derecho .inside .form form input[type='submit'] {
 main .container .derecho .inside .form form input[type='submit']:hover {
 	cursor: pointer;
 	color: #fff;
-	background-color: #6C9128;
-	border: 1px solid #6C9128;
+	background-color: #1846CB;
+	border: 1px solid #1846CB;
 }
 
 main .container .derecho .ingresa {
-	width: 100%;
-	max-width: 361px;
+	max-width: 100%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -202,7 +206,7 @@ main .container .derecho .ingresa p {
 }
 
 main .container .derecho .ingresa a {
-	color: #89991d;
+	color: #FFF;
 	font-size: 16px;
 	font-family: 'Helvetica Neue';
 }
@@ -210,7 +214,6 @@ main .container .derecho .ingresa a {
 .mes {
 	width: 100%;
 	text-align: center;
-	background-image: url("../img/bg-tecsup.png");
 	padding: 1em;
 }
 
@@ -251,6 +254,7 @@ main .container .derecho .ingresa a {
 	max-width: 368px;
 	border: 1px solid #01aef0;
 	transition: 1s linear;
+    cursor: pointer;
 }
 
 .mes .contenedor .padre .caja .izq {
@@ -364,6 +368,7 @@ main .container .derecho .ingresa a {
 	font-size: 2.5em;
 	letter-spacing: 4px;
 	font-family: "Helvetica Neue";
+    text-align: right;
 }
 
 .mes .contenedor .noti .der p {
@@ -374,8 +379,10 @@ main .container .derecho .ingresa a {
 
 .pilares {
 	width: 100%;
-	background-image: url("../img/temporal.jpg");
+	background-image: url("../img/bg_pilares.jpg");
 	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .pilares .container {
@@ -402,7 +409,7 @@ main .container .derecho .ingresa a {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 30px;
+	padding-bottom: 70px;
 }
 
 .pilares .container .conte-cajas .caja {
@@ -462,11 +469,9 @@ main .container .derecho .ingresa a {
 	max-width: 1200px;
 	margin: auto;
 	padding: 1em;
-	background-image: url("../img/bg-tecsup.png");
 }
 
 .final .caja h2 {
-	background: white;
 	padding: 1em;
 	widows: 100%;
 	text-align: center;
@@ -494,6 +499,7 @@ main .container .derecho .ingresa a {
 	background: white;
 	font-family: 'Helvetica Neue';
 	justify-content: space-between;
+    cursor: pointer;
 }
 
 .final .padre .caja2:hover {
@@ -546,48 +552,23 @@ main .container .derecho .ingresa a {
 	width: 100%;
 	font-family: 'Helvetica Neue';
 	font-size: 15px;
-	padding-left: 9px;
+	padding: 0px 10px 0px 0px;
 	color: #fff;
 }
 
 .final .padre .caja2 .col-1 {
-	background-color: #1AE3FF;
+	background-color: #00B0F7;
 }
 
 .final .padre .caja2 .col-2 {
-	background-color: #FE0000;
+	background-color: #1846CB;
 }
-
-.final .padre .caja2 .col-3 {
-	background-color: #FF5E16;
-}
-
-.final .padre .caja2 .col-4 {
-	background-color: #0055C9;
-}
-
-.final .padre .caja2 .col-5 {
-	background-color: #509FE4;
-}
-
 .final .padre .co-1 {
-	border: 1px solid #1AE3FF;
+	border: 1px solid #00B0F7;
 }
 
 .final .padre .co-2 {
-	border: 1px solid #FE0000;
-}
-
-.final .padre .co-3 {
-	border: 1px solid #FF5E16;
-}
-
-.final .padre .co-4 {
-	border: 1px solid #0055C9;
-}
-
-.final .padre .co-5 {
-	border: 1px solid #509FE4;
+	border: 1px solid #1846CB;
 }
 
 .redes {
@@ -649,15 +630,12 @@ main .container .derecho .ingresa a {
 
 .infor {
 	width: 100%;
-	background-color: #fff;
 }
 
 .infor .contenedor {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 3em 5em 3em 5em;
-    background-image: url("../img/bg-tecsup.png");
 }
 
 .infor .contenedor .titulo {
@@ -678,6 +656,7 @@ main .container .derecho .ingresa a {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 
 .infor .contenedor .caja-padre .cajas {

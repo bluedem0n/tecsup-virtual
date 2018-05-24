@@ -25,9 +25,9 @@ $(document).ready(function(){
     });
 
     $('.mes .contenedor .padre .caja').hover(function(){
-        $(".der", this).css("background", "#a23892");
-        $(".izq .title", this).css("color", "#a23892");
-        $(this).css("border","1px solid #a23892");
+        $(".der", this).css("background", "#1846CB");
+        $(".izq .title", this).css("color", "#1846CB");
+        $(this).css("border","1px solid #1846CB");
 
     }, function(){
         $(".der", this).css("background", "#01aef0");
