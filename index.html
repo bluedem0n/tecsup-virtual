@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<a onclick="topFunction()" id="myBtn" title="Go to top">Top</a>
 	<header>
 		<nav>
 			<div class="logo"> <img src="img/logo.png" alt=""> </div>
@@ -22,7 +23,8 @@
 				<li> <a href="#streaming">Streaming</a> </li>
 				<li> <a href="#moocs">Moocs</a> </li>
 				<li> <a href="#pilares">Pilares</a> </li>
-				<li> <a href="#contacto">Conctáctenos</a> </li>
+				<li> <a href="http://blog.tecsupvirtual.edu.pe/">Blog</a></li>
+				<li> <a href="http://mkt.tecsup.edu.pe/tecsup-virtual">Conctáctenos</a> </li>
 			</div>
 		</nav>
 	</header>
@@ -43,11 +45,11 @@
 					</div>
 				</div>
 				<div class="ingresa">
-					<p>¿Ya eres estudiante de Tecsup Virtual?</p> <a href="#">Entra aquí primero</a> </div>
+					<p>¿Ya eres estudiante de Tecsup Virtual?</p> <a href="https://tecsupvirtual.edu.pe/">Entra aquí primero</a> </div>
 			</div>
 		</div>
 	</main>
-	<section class="mes">
+	<section class="mes" id="streaming">
 		<div class="contenedor">
 			<!--<div class="text">
                 <p>Estudia cuándo y dónde quieras</p>
@@ -112,7 +114,7 @@
 			<div class="contenedor">
 				<div class="noti">
 					<div class="izq">
-						<button>REPRODUCIR VIDEO</button>
+						<button></button>
 					</div>
 					<div class="der">
 						<h2>¿Qué es un MOOC de Tecsup Virtual?</h2>
@@ -128,7 +130,7 @@
 			<source src="img/video.mp4" type="video/mp4"> </video>
 	</div>
 	<div class="oscuro"> </div>
-	<section class="pilares">
+	<section class="pilares" id="pilares">
 		<div class="container">
 			<h2>Nuestros Pilares</h2>
 			<div class="conte-cajas">
@@ -147,142 +149,161 @@
 			</div>
 		</div>
 	</section>
-	<section class="final">
+	<section class="final" id="moocs">
 		<div class="caja">
 			<div class="titulo">
 				<h2>Nuestros MOOCS</h2>
 			</div>
+			<div class="filtros">
+				<li data-filter="todos" class="circle-1"></li>
+				<span>MOOCS TECSUP VIRTUAL</span>
+				<li data-filter="todos" class="circle-2"></li>
+				<span>MOOCS SFK</span>
+			</div>
 		</div>
 		<div class="padre">
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/1.png" alt=""> </div>
-					<div class="txt">
-						<p>Sistema de Gestión de Seguridad y Salud en el Trabajo Según OHSAS 18001 y la Ley 29783.</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/audit-gsst-o18001">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/1.png" alt=""> </div>
+						<div class="txt">
+							<p>Auditor del Sistema de Gestión de Seguridad y Salud en el Trabajo</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/2.png" alt=""> </div>
-					<div class="txt">
-						<p>Elaboración y Evaluación de Proyectos</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/elab-eval-proyec">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/2.png" alt=""> </div>
+						<div class="txt">
+							<p>Elaboración y Evaluación de Proyectos</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/3.png" alt=""> </div>
-					<div class="txt">
-						<p>Gestión de la Innovación Tecnológica</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/gestion-innovacion-tecnologica">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/3.png" alt=""> </div>
+						<div class="txt">
+							<p>Gestión de la Innovación Tecnológica</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/4.png" alt=""> </div>
-					<div class="txt">
-						<p>Liderazgo a través de la inteligencia Emocional</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/liderazgo-inteligencia-emocional">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/4.png" alt=""> </div>
+						<div class="txt">
+							<p>Liderazgo a través de la inteligencia Emocional</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/5.png" alt=""> </div>
-					<div class="txt">
-						<p>Servicios de la Nube</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/servicios-de-la-nube">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/5.png" alt=""> </div>
+						<div class="txt">
+							<p>Servicios de la Nube</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/6.png" alt=""> </div>
-					<div class="txt">
-						<p>Sistemas Eléctrocps de Potencia</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/sistemas-electricas-potencia">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/6.png" alt=""> </div>
+						<div class="txt">
+							<p>Sistemas Eléctrocps de Potencia</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/7.png" alt=""> </div>
-					<div class="txt">
-						<p>Supervisión Eficaz</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/supervision-eficaz">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/7.png" alt=""> </div>
+						<div class="txt">
+							<p>Supervisión Eficaz</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-1">
-				<div class="hijo col-1">
-					<div class="icono"> <img src="img/moocs/8.png" alt=""> </div>
-					<div class="txt">
-						<p>Variadores de Velocidad</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/courses/variadores-velocidad">
+					<div class="hijo col-1">
+						<div class="icono"> <img src="img/moocs/8.png" alt=""> </div>
+						<div class="txt">
+							<p>Variadores de Velocidad</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-2">
-				<div class="hijo col-2">
-					<div class="icono"> <img src="img/moocs/9.png" alt=""> </div>
-					<div class="txt">
-						<p>Lubricación</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/skf/courses/skf-lubricacion">
+					<div class="hijo col-2">
+						<div class="icono"> <img src="img/moocs/9.png" alt=""> </div>
+						<div class="txt">
+							<p>Lubricación</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-2">
-				<div class="hijo col-2">
-					<div class="icono"> <img src="img/moocs/10.png" alt=""> </div>
-					<div class="txt">
-						<p>Monitorización de condicones de maquinaria</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/skf/courses/skf-monitorizacion-de-condiciones-de-maquinaria">
+					<div class="hijo col-2">
+						<div class="icono"> <img src="img/moocs/10.png" alt=""> </div>
+						<div class="txt">
+							<p>Monitorización de condicones de maquinaria</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-2">
-				<div class="hijo col-2">
-					<div class="icono"> <img src="img/moocs/11.png" alt=""> </div>
-					<div class="txt">
-						<p>Montaje y desmontaje de rodamientos</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/skf/courses/skf-montaje-y-desmontaje-de-rodamientos">
+					<div class="hijo col-2">
+						<div class="icono"> <img src="img/moocs/11.png" alt=""> </div>
+						<div class="txt">
+							<p>Montaje y desmontaje de rodamientos</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-2">
-				<div class="hijo col-2">
-					<div class="icono"> <img src="img/moocs/12.png" alt=""> </div>
-					<div class="txt">
-						<p>Nociones básicas sobre rodamientos</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/skf/courses/skf-nociones-basicas-sobre-rodamientos">
+					<div class="hijo col-2">
+						<div class="icono"> <img src="img/moocs/12.png" alt=""> </div>
+						<div class="txt">
+							<p>Nociones básicas sobre rodamientos</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis</p>
-				<button>></button>
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 			<div class="caja2 co-2">
-				<div class="hijo col-2">
-					<div class="icono"> <img src="img/moocs/13.png" alt=""> </div>
-					<div class="txt">
-						<p>Transmisión de potencia</p>
+				<a href="https://tecsupvirtual.edu.pe/browse/tv/emooc/skf/courses/skf-transmision-de-potencia">
+					<div class="hijo col-2">
+						<div class="icono"> <img src="img/moocs/13.png" alt=""> </div>
+						<div class="txt">
+							<p>Transmisión de potencia</p>
+						</div>
 					</div>
-				</div>
-				<p>1 jun. - 20 jul. 2018 | Gratis ></p>
-				
+					<p>1 jun. - 20 jul. 2018 | Gratis ></p>
+				</a>
 			</div>
 		</div>
 	</section>
